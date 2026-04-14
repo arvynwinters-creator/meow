@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    color: #111;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;   
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #d9e1d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+    font-family:"Josefin Sans", sans-serif;
+}
+
+#heading{
+    font-size: 45px;
+    font-family:"Josefin Sans", sans-serif;
+    font-weight: 800;
+    transform: translateX(130%);
+}
+#logo{
+    color: #008000;
+    font-size: 45px;
+    transform: translateX(-600%);
+}
+nav p{
+    font-family: "Josefin Sans" , sans-serif;
+    transform: translateX(-180%);
+    font-size: 15px;
+}
+main{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+}
+.section1{
+    height:90%;
+    width:50%;
+    background-color: #fff;
+    padding: 100px;
+}
+.section1 h1{
+    margin: 30px 0px;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 50px;
+    word-spacing: 10px;
+    font-weight: 400;
+}
+.section1 h3{
+    font-size: 30px;
+    font-family: "Asul", serif;
+    margin: 30px 0px;
+}
+.section1 p{
+    font-family: "Josefin Sans" , sans-serif;
+    font-size: 18px;
+    height: 150px;
+    width: 530px;
+    margin: 70px 0px;
+}
+.section2{
+    width: 50%;
+    height: 90%;
+}
+#img{
+    background-image: url("https://exclusivedecordf.com.br/assets/img/hero-img.svg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#btn1{
+    height: 60px;
+    width: 320px;
+    border-radius: 15px;
+    background-color: #fbcd03;
+    color: #fff;
+    border: none;
+    font-size: 23px;
+    font-weight: 800;
+    font-family: "Josefin Sans" , sans-serif;
+    margin: 0px 15px;
+    transform: translateY(-80%);
+}
+#btn2{
+    height: 60px;
+    width: 270px;
+    border-radius: 15px;
+    border:3px solid #fbcd03;
+    background-color: #fff;
+    color: #111;
+    font-size: 23px;
+    font-weight: 800;
+    font-family: "Josefin Sans" , sans-serif;
+    margin: 0px 15px;
+     transform: translateY(-80%);
+}
+.cboxes{
+    display: flex;
+    gap: 20px;
+    height: 100px;
+    width: 100vw;
+    background-color: #fff;
+    transform: translateX(-5%); 
+    align-items: center;
+    justify-content: center;
+}
+#cbox1{
+    width:30px;
+    height: 30px;
+    background-color: #895603;
+}
+#cbox2{
+    width:30px;
+    height: 30px;
+    background-color: #e4b13b;
+}
+#cbox3{
+    width:30px;
+    height: 30px;
+    background-color: #afb2b3;
+}
+#cbox4{
+    width:30px;
+    height: 30px;
+    background-color: #d7eff5;
+}
+.section3{
+    height:100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    background-color: #5f6161;
+}
+.pg1{
+    display: flex;
+}
+.pg2{
+    width: 100%;
+    height: 100%;
+}
+
+/* second page*/
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 300px;
+}
+.section3 h1{
+    font-family: "Josefin Sans" , sans-serif;
+    font-size: 35px;
+    position: relative;
+    top:100px;
+    color: #fff;
+}
+.section3 p{
+    font-family: "Josefin Sans" , sans-serif;
+    font-size: 15px;
+    height: 60px;
+    width: 600px;
+    position: relative;
+    top: 150px;
+    left: 650px;
+    color: #fff;
+}
+[id^="card"]{
+    background-color: #fafbfc;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    border: 2px solid #111;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+[id^="card"]:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px #0000004d;
+}
+
+[id^="card"] #part1{
+    height: 60%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+#card1 #part1{
+    background-image: url("https://fancyhouse-design.com/wp-content/uploads/2025/02/A-Sophisticated-Bedroom-with-Balanced-Contrast-and-Textural-Depth.jpg");
+    background-size: cover;
+}
+#card2 #part1{
+    background-image: url("https://ndakitchens.com/wp-content/uploads/2025/01/21A-Seusing-Blvd-Ronkonkoma-NY-Josh-Goetz-Photography-1.jpg");
+    background-size: cover;
+}
+#card3 #part1{
+    background-image: url("https://www.andacademy.com/resources/wp-content/uploads/2024/06/image2-1.jpg");    
+    background-size: cover;
+    background-position: left;
+}
+#card4 #part1{
+    background-image: url("https://cdn.discount.com.au/wp-content/uploads/2025/03/06060531/how-to-design-a-bathroom-modern-large-bathroom.jpg");
+    background-size: cover;
+}
+[id^="card"] #part2 p{
+    position: static;
+    width: 100%;
+    height: 100px;
+    color: #111;
+}
+[id^="card"] #part2 h3{
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 20px 0px;
+    color: #111;
+}
